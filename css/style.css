@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900');
+
+* {box-sizing: border-box;}
+body {font-family: 'Montserrat', sans-serif; position: relative;}
+p {font-size: 18px; line-height: 30px; font-weight: 400; color: #000;}
+
+.container {max-width: 1400px; width: 100%; margin: 0 auto;}
+.wrapper {max-width: 1200px; width: 100%; margin: 0 auto;}
+.clr::after {content: ''; clear: both; display: table;}
+.fl {float: left;}
+.fr {float: right;}
+
+a {text-decoration: none;}
+a.btn {display: inline-block; max-width: 180px; width: 100%; height: 60px; line-height: 60px; color: #feffff; font-size: 14px; text-align: center;}
+a.btn-orange {background-color: #d75100;}
+a.btn-dark {background-color: #1f343d;}
+a.btn-blue {background-color: #00a3e6;}
+
+a.active {color: #fff;}
+
+.title-white {font-weight: 700; font-size: 60px; color: #feffff;}
+.title-dark {font-weight: 700; font-size: 48px; color: #1f343d;}
+.title-blue {font-weight: 700; font-size: 30px; color: #00a3e6;}
+.txt-grey {font-weight: 400; font-size: 30px; color: #a7a7a7;}
+.txt-subtitle {font-weight: 300; font-size: 18px; line-height: 30px; color: #feffff;}
+
+.top-shadow {box-shadow: inset 0px 250px 170px -150px #000;}
+
+
+/***************************************HOME PAGE**/
+
+/***************HEADER***/
+header {position: absolute; top: 0; left: 0; height: 90px; width: 100%; z-index: 999;}
+header .container {height: 100%; position: relative;}
+.logo-wrap {position: absolute; left: 25px; top: 50%; transform: translateY(-50%);}
+a.logo {background: url(../images/logo.png) no-repeat center center; width: 197px; height: 41px; display: block;}
+
+header .menu {position: absolute; right: 25px; top: 50%; transform: translateY(-50%);}
+header .menu > nav > ul > li {position: relative; display: inline-block; min-width: 90px; height: 37px; line-height: 37px; text-align: center; margin-right: -4px;}
+header .menu > nav > ul > li:last-child {margin-right: 0;}
+header .menu > nav > ul > li a {display: block; font-weight: 400; font-size: 14px; color: #00a3e6; transition: all .2s ease;}
+header .menu > nav > ul > li:hover > a {background: #1f343d; color: #fff;}
+ul.submenu {display: none; position: absolute; background: #1f343d; min-width: 175px; left: -42px; top: 36px;}
+ul.submenu li {width: 100%; height: 37px;}
+header .menu > nav > ul > li:hover ul.submenu {display: block;}
+ul.submenu li a:hover {color: #fff;}
+
+
+
+/*********HOME TOP**/
+.home-top {display: flex; align-items: center; background: url(../images/top-home.jpg) no-repeat center center; width: 100%; height: 700px; background-size: cover;}
+.home-top .wrapper {text-align: center; padding-top: 90px;}
+.home-top h1 {margin-bottom: 20px;}
+.home-top-btns {margin: 50px 0;}
+.home-top-btns .btn-dark {margin-right: 20px;}
+.checkin-logo {width: 71px; height: 84px; display: inline-block;}
+.checkin-logo img {width: 100%;}
+
+
+/*******CHEER**/
+.snow-bg {position: relative; width: 100%; min-height: 550px; background: url(../images/snow-bg.jpg) no-repeat center center; background-size: cover;}
+.snow-bg-top {position: absolute; background: url(../images/snow-bg-top.png) repeat-x; width: 100%; height: 165px; top: -77px;}
+.cheer-team {background: url(../images/hockey-stick.png) no-repeat top right; width: 100%; min-height: 535px;}
+.cheer-team .wrapper {padding-top: 100px;}
+.cheer-team .wrapper h2 {margin-bottom: 10px;}
+.cheer-team .wrapper h3 {margin-bottom: 30px;}
+.cheer-team .wrapper p {max-width: 500px; width: 100%; margin-bottom: 60px;}
+
+
+
+/******FOOD DRINKS**/
+.food-drinks {padding: 60px 0;}
+.food-drinks-box {width: 100%;}
+.food-drinks-img,
+.food-drinks-menu {max-width: 600px; width: 100%; float: left;}
+.food-drinks-img img {width: 100%;}
+.food-drinks-box.margbtm {margin-bottom: 50px;}
+.food-drinks-menu {padding: 30px 0 30px 50px;}
+.food-drinks-menu p {margin: 25px 0 60px; max-width: 500px; width: 100%;}
+
+
+
+/*******HAPPY HOURS**/
+.happy-hours {width: 100%; height: 520px; background: url(../images/happy-hours-bg.jpg) no-repeat center center; background-size: cover; display: flex; align-items: center;}
+.happy-hour-wrap {max-width: 500px; width: 100%; text-align: center; margin: 0 auto;}
+.happy-hour-wrap h4 {font-size: 30px; line-height: 48px; font-weight: 700; color: #fff;}
+.happy-hour-wrap h2 {font-size: 48px; line-height: 48px; font-weight: 700; color: #fff;}
+.happy-hour-wrap p {color: #fff; margin: 60px 0 70px;}
+
+
+
+/******FOOTER***/
+footer {width: 100%; height: 300px; background: #1f343d;}
+.footer-wrap {max-width: 700px; width: 100%; margin: 0 auto; padding-top: 15px;}
+.footer-logo {margin: 0 auto; max-width: 166px; width: 100%; height: 74px;}
+.footer-logo a {display: block;}
+.footer-nav {width: 100%; margin: 25px 0;}
+.footer-nav nav {width: 100%;}
+.footer-nav nav ul {width: 100%; text-align: center;}
+.footer-nav nav ul li {display: inline-block; vertical-align: top; margin-right: 40px;}
+.footer-nav nav ul li:last-child {margin-right: 0;}
+.footer-nav nav ul li a {transition: all .2s ease; display: block; font-weight: 400; font-size: 14px; line-height: 30px; color: #00a3e6;}
+.footer-nav nav ul li a:hover {color: #fff;}
+footer .copyright {border-top: 1px solid #58585a; text-align: center;}
+footer .copyright p {font-size: 14px; line-height: 24px; color: #9c9c9c; font-weight: 300; margin: 20px 0 15px;}
+footer .copyright p.cpyr {font-weight: 300; font-size: 12px;}
+a.uhsome {display: inline-block; background: url(../images/uhsome.png) no-repeat center center; width: 54px; height: 16px; vertical-align: sub; margin-left: 5px;}
