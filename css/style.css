@@ -248,3 +248,66 @@ height: 60px; line-height: 60px; color: #feffff; font-size: 14px; text-align: ce
 .cont-add-wrap ul li:last-child {margin-bottom: 0;}
 .cont-add-wrap ul li p {color: #000; margin-bottom: 5px;}
 .cont-add-wrap ul li p span.txt-grey {font-weight: 700;}
+
+
+
+
+
+
+
+
+
+
+/*******************************RESPONSIVE**/
+
+/***homepage**/
+@media only screen and (max-width: 1024px) {
+  .wrapper {padding: 0 20px;}
+  .food-drinks-img,
+  .food-drinks-menu {float: none; margin: auto;}
+}
+
+@media only screen and (max-width: 768px) {
+  .cheer-team .wrapper {padding-top: 70px; padding-left: 50px;}
+}
+
+@media only screen and (max-width: 375px) {
+  .wrapper {padding-left: 40px !important; padding-right: 40px;}
+  header .menu {display: none;}
+  .title-white {font-size: 32px;}
+  .txt-subtitle {font-size: 16px; line-height: 24px;}
+  .home-top-btns .btn-dark {margin-right: 0; margin-bottom: 20px;}
+  .title-dark {font-size: 30px; line-height: 30px;}
+  .title-blue {font-size: 24px; line-height: 28px;}
+  p {font-size: 16px; line-height: 24px;}
+  .cheer-team a.btn-orange {display: block; margin: auto;}
+  .food-drinks-menu {padding: 30px; text-align: center;}
+  .food-drinks-box.margbtm {margin-bottom: 15px;}
+  .happy-hour-wrap {padding: 0 25px;}
+  .happy-hour-wrap h4 {font-size: 26px; line-height: 36px;}
+  .happy-hour-wrap h2 {font-size: 38px; line-height: 40px;}
+  footer {height: auto; padding: 0 25px; padding-bottom: 10px;}
+  .footer-nav nav ul li {display: block; margin-right: 0;}
+  footer .copyright p {font-size: 10px; line-height: 14px;}
+  footer .copyright p.cpyr {font-size: 10px;}
+  .cheer-team {background: none;}
+}
+
+
+/*********about***/
+
+@media only screen and (max-width: 1024px) {
+  .about-menus-box {float: none; margin: auto; margin-bottom: 50px;}
+  .about-menus-box.btm-box {margin-bottom: 20px;}
+}
+
+@media only screen and (max-width: 375px) {
+  .cheer-team {background: none;}
+  .cheer-team .wrapper p {margin-bottom: 0;}
+  .menus-blue-cover {bottom: 0; height: 130px; padding: 22px 32px; text-align: center;}
+  .menus-blue-cover p {font-size: 16px; line-height: 20px;}
+  .about-menus-box {height: auto;}
+  .about-box-txt {padding: 25px;}
+  .about-menu-drinks-btns a.btn-dark {margin-right: 0; margin-bottom: 20px;}
+  .about-menu-drinks {padding: 70px 0;}
+}
