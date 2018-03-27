@@ -166,6 +166,8 @@ a.uhsome {display: inline-block; background: url(../images/uhsome.png) no-repeat
 .wings-salads-menu .wings-salads-box {max-width: 600px; width: 100%; float: left;}
 .wings-salads-box .shelf-wings {padding: 0 50px; margin-bottom: 50px;}
 .wings-salads-box .shelf-wings h2 {margin-bottom: 10px;}
+.wings-salads-box .salads-img {width: 100%;}
+.wings-salads-box .salads-img img {width: 100%;}
 .shelf-wings .house-style {width: 100%; margin-top: 30px; margin-bottom: 10px;}
 .shelf-wings .house-style .house-title {width: 50%;}
 .shelf-wings .house-style .house-title h3 {line-height: 36px;}
@@ -262,7 +264,7 @@ height: 60px; line-height: 60px; color: #feffff; font-size: 14px; text-align: ce
 
 /***homepage**/
 @media only screen and (max-width: 1024px) {
-  .wrapper {padding: 0 20px;}
+  .wrapper {padding: 0 40px;}
   .food-drinks-img,
   .food-drinks-menu {float: none; margin: auto;}
 }
@@ -272,10 +274,10 @@ height: 60px; line-height: 60px; color: #feffff; font-size: 14px; text-align: ce
 }
 
 @media only screen and (max-width: 375px) {
-  .wrapper {padding-left: 40px !important; padding-right: 40px;}
+  .wrapper {padding: 0 20px;}
   header .menu {display: none;}
   .title-white {font-size: 32px;}
-  .txt-subtitle {font-size: 16px; line-height: 24px;}
+  .txt-subtitle {font-size: 14px; line-height: 24px;}
   .home-top-btns .btn-dark {margin-right: 0; margin-bottom: 20px;}
   .title-dark {font-size: 30px; line-height: 30px;}
   .title-blue {font-size: 24px; line-height: 28px;}
@@ -291,6 +293,10 @@ height: 60px; line-height: 60px; color: #feffff; font-size: 14px; text-align: ce
   footer .copyright p {font-size: 10px; line-height: 14px;}
   footer .copyright p.cpyr {font-size: 10px;}
   .cheer-team {background: none;}
+}
+
+@media only screen and (max-width: 375px) {
+  .wrapper {padding: 0 20px;}
 }
 
 
@@ -310,4 +316,70 @@ height: 60px; line-height: 60px; color: #feffff; font-size: 14px; text-align: ce
   .about-box-txt {padding: 25px;}
   .about-menu-drinks-btns a.btn-dark {margin-right: 0; margin-bottom: 20px;}
   .about-menu-drinks {padding: 70px 0;}
+}
+
+
+/********menu**/
+
+@media only screen and (max-width: 1024px) {
+  .menu-content {padding: 50px 0;}
+  .menu-starters h2 {text-align: center;}
+  .starters-list {float: none; margin: auto;}
+  .starters-list .starters-list-box {float: none; margin: auto;}
+  .wings-salads-menu .wings-salads-box {float: none; margin: auto;}
+}
+
+@media only screen and (max-width: 768px) {
+  .menu-top .menu-top-text {padding-left: 0;}
+  .menu-top .wrapper {display: block;}
+  .menu-top .menu-top-text {margin: auto; margin-bottom: 20px;}
+  .menu-top a.btn {display: block; margin: auto;}
+  .menu-starters {padding: 0;}
+}
+
+@media only screen and (max-width: 375px) {
+  .starters-list-box ul li .starters-title h3 {float: none; display: block; width: 100%;}
+  .starters-list-box ul li .starters-title span.txt-grey {float: none; display: block;}
+  .wings-salads-box .shelf-wings {padding: 0;}
+  .shelf-wings .house-style .house-title {width: 100%;}
+  .shelf-wings .house-style .house-price {width: 100%; text-align: left;}
+  .wings-salads-box .salads {padding: 0; margin-top: 40px;}
+  .txt-grey {font-size: 20px;}
+}
+
+
+
+/*******specials**/
+
+@media only screen and (max-width: 768px) {
+  .specials p.title-dark {font-size: 36px; line-height: 40px;}
+}
+
+@media only screen and (max-width: 375px) {
+  .specials-top .wrapper {padding: 0 20px;}
+  .specials .wrapper {padding: 20px;}
+  .specials p.title-dark {font-size: 24px; line-height: 28px;}
+  .specials ul li .line-bar {margin-top: 30px;}
+  .specials p.title-blue {font-size: 20px; line-height: 24px;}
+}
+
+
+
+/*********contact**/
+
+@media only screen and (max-width: 768px) {
+  .contact-headline {display: block; bottom: 40px;}
+  .contact-headline h1 {margin-right: 0; margin-bottom: 20px;}
+  .contact-form {padding: 0 40px;}
+  .contact-form form ul li input[type="email"] {margin-right: 0; margin-bottom: 40px; max-width: 100%;}
+  .contact-form form ul li input[type="number"] {max-width: 100%;}
+}
+
+@media only screen and (max-width: 375px) {
+  .contact-form form ul li {margin-bottom: 25px;}
+  .contact-form form ul li input[type="email"] {margin-bottom: 25px;}
+  .contact-form form ul li input {height: 60px; padding: 0 15px; font-size: 18px;}
+  .contact-form form ul li textarea {padding: 15px; font-size: 18px;}
+  .cont-add-wrap .title-blue {font-size: 20px;}
+  .contact-add {padding: 40px 0;}
 }
